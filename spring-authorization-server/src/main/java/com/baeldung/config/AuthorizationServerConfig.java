@@ -77,7 +77,7 @@ public class AuthorizationServerConfig {
 
     @Bean
     public ProviderSettings providerSettings() {
-        return new ProviderSettings().issuer("http://127.0.0.1:9000");
+        return new ProviderSettings().issuer("http://host.docker.internal:9000");
     }
 
     @Bean

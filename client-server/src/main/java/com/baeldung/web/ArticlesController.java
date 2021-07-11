@@ -21,7 +21,7 @@ public class ArticlesController {
     ) {
         return this.webClient
           .get()
-          .uri("http://localhost:8090/articles")
+          .uri("http://host.docker.internal:9999/articles")
           .attributes(oauth2AuthorizedClient(authorizedClient))
           .retrieve()
           .bodyToMono(String[].class)

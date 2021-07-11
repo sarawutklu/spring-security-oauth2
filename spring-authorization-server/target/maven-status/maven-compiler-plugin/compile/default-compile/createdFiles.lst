@@ -1,3 +1,7 @@
+com\baeldung\entity\User.class
 com\baeldung\config\AuthorizationServerConfig.class
-com\baeldung\config\DefaultSecurityConfig.class
+com\baeldung\config\UserPrinciple.class
 com\baeldung\OAuth2AuthorizationServerApplication.class
+com\baeldung\repo\UserJpaRepository.class
+com\baeldung\config\UserDetailsServiceImpl.class
+com\baeldung\config\DefaultSecurityConfig.class
