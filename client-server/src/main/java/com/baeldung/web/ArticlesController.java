@@ -27,4 +27,10 @@ public class ArticlesController {
           .bodyToMono(String[].class)
           .block();
     }
+    @GetMapping(value = "/token")
+    public OAuth2AuthorizedClient getToken(
+      @RegisteredOAuth2AuthorizedClient("articles-client-authorization-code") OAuth2AuthorizedClient authorizedClient
+    ) {
+        return authorizedClient;
+    }
 }
